@@ -1,3 +1,14 @@
+const searchBtn = document.getElementById("search-btn");
+const inputField = document.getElementById("input-field");
+
+inputField.addEventListener("keypress", function(event) {
+    // event.preventDefault();
+    if (event.keyCode == 13){
+      searchBtn.click();
+    }
+        
+});
+
 const loadMeals = () => {
   const inputField = document.getElementById("input-field");
   const singleDiv = document.getElementById("see-detail");
